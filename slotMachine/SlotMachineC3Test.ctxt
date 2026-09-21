@@ -1,0 +1,18 @@
+#BlueJ class context
+#Sun Sep 20 23:09:48 COT 2026
+comment0.target=SlotMachineC3Test
+comment0.text=\r\n Pruebas de ACEPTACION del Ciclo 3 de SlotMachine (SlotMachine(n), solve,\r\n simulate y la maquina como testing tool del Problem I de la maraton 2025).\r\n Cada prueba es un escenario completo visto desde el usuario; se ejecutan\r\n con la maquina invisible para no abrir ventanas ni dialogos. La parte\r\n visual (simulate) se muestra en vivo llamando SlotMachineContest.simulate(4).\r\n\r\n @author Juan Camilo Rojas / Rafael Ricardo Gomez\r\n
+comment1.params=visible
+comment1.target=SlotMachine machineShowing(int[])
+comment1.text=\r\n Maquina de n ruedas y n simbolos (n \= cantidad de argumentos) donde la rueda w\r\n muestra el simbolo numero visible[w-1] (0..n-1) del circulo comun.\r\n
+comment2.target=void deberiaCrearUnaMaquinaDeNRuedasYNSimbolosDistintos()
+comment2.text=\ SlotMachine(n) arma n ruedas con los mismos n simbolos, todos de colores\r\ndistintos y en el mismo orden, y nunca nace ganada; con un n invalido falla.
+comment3.target=void deberiaSolucionarElProblemaDeLaMaratonParaCualquierN()
+comment3.text=\ Para cualquier n del enunciado (3 a 50), solve entrega las acciones {rueda, pasos}\r\nque llevan una maquina aleatoria al jackpot sin pasarse del limite de acciones.
+comment4.target=void deberiaResponderComoElJuezEnLosEjemplosDelEnunciado()
+comment4.text=\ La maquina se comporta como el juez del problema\: reproduce las dos\r\ninteracciones de ejemplo del enunciado, incluidos los pasos negativos.
+comment5.target=void noDeberiaPermitirAccionesDespuesDeGanar()
+comment5.text=\ Una vez que todas las ruedas muestran lo mismo la partida termina\:\r\nla herramienta no acepta mas acciones.
+comment6.target=void deberiaSimularSoloCuandoLaMaquinaCabeEnPantalla()
+comment6.text=\ Solo se simula cuando la maquina cabe en pantalla; si no, no es posible.\r\n(La simulacion visual se muestra en vivo con simulate(4).)
+numComments=7

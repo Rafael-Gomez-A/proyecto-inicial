@@ -1,0 +1,18 @@
+#BlueJ class context
+#Sun Sep 20 23:07:45 COT 2026
+comment0.target=SlotMachineC2Test
+comment0.text=\r\n Pruebas de unidad del Ciclo 2\: swap, lock/unlock, spin(wheel,steps)\r\n y spin(setSymbols), las pruebas se corren invisibles\r\n\r\n @author Juan Camilo Rojas / Rafael Ricardo Gomez\r\n
+comment1.target=void setUp()
+comment10.target=void deberiaEstablecerLaConfiguracion()
+comment11.target=void DetectaJackpotDespuesDeEstablecerConfiguracion()
+comment12.target=void fallaAplicarConfiguracionCuandoUnColorNoExiste()
+comment13.target=void tearDown()
+comment2.target=void SwapTwoWheels()
+comment3.target=void AjustarPosicionesFueraDeRangoSwap()
+comment4.target=void FallaAlIntercambiarEnMaquinaVacia()
+comment5.target=void LockAWheel()
+comment6.target=void NoDejaGirarUnaRuedaFijada()
+comment7.target=void PermiteGirarDespuesDeUnlock()
+comment8.target=void AvanzaLaRuedaLosPasosIndicados()
+comment9.target=void FallaSpinStepsConUnaRuedaVacia()
+numComments=14

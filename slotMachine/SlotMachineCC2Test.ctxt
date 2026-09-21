@@ -1,0 +1,9 @@
+#BlueJ class context
+#Sun Sep 20 23:07:45 COT 2026
+comment0.target=SlotMachineCC2Test
+comment0.text=\r\n Clase de pruebas COLECTIVA del Ciclo 2, construida entre todo el curso\r\n via wiki. Cada autor agrega sus casos con el prefijo de sus apellidos\r\n (iniciales de los primeros apellidos + primera letra del segundo,\r\n en orden alfab\u00E9tico).\r\n\r\n Casos agregados por\: Gomez / Rojas (prefijo\: gomRoj)\r\n
+comment1.target=void setUp()
+comment2.target=void gomRojVolverALaConfiguracionOriginalAlIntercambiarElMismoPar()
+comment3.target=void gomRojNoDeberiaAplicarConfigCuandoUnColorEsInvalido()
+comment4.target=void clean()
+numComments=5

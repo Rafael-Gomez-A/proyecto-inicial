@@ -1,0 +1,17 @@
+#BlueJ class context
+#Sun Sep 20 23:07:45 COT 2026
+comment0.target=ContestTool
+comment0.text=\r\n La herramienta de pruebas (testing tool) de la maraton\: es la unica via por la\r\n que un solver puede tocar una SlotMachine. Ofrece exactamente lo que ofrece\r\n el juez de la maraton\: girar una rueda y saber cuantos simbolos distintos\r\n hay visibles. No permite consultar colores, la configuracion ni el jackpot.\r\n\r\n Ademas lleva la cuenta de las acciones realizadas, que es la respuesta de\r\n solve(n), y sabe cuando la partida termino (todas las ruedas muestran el\r\n mismo simbolo), momento desde el cual no acepta mas acciones.\r\n\r\n@author Juan Camilo Rojas / Rafael Ricardo Gomez\r\n@version 1.0 (Ciclo 3)\r\n
+comment1.params=machine n
+comment1.target=ContestTool(SlotMachine, int)
+comment1.text=\r\n Crea la herramienta sobre una maquina de n ruedas y n simbolos\r\n (la creada con SlotMachine(n)).\r\n
+comment2.params=wheel steps
+comment2.target=int spin(int, int)
+comment2.text=\r\n Gira la rueda (1..n) la cantidad de posiciones dada hacia adelante; un\r\n valor negativo equivale a girar hacia atras. Cuenta como una accion.\r\n Un giro que no mueve la rueda (multiplo de n) no se ejecuta ni se cuenta.\r\n @return la cantidad de simbolos distintos visibles tras la accion.\r\n @throws IllegalStateException si la partida ya termino o la maquina rechaza la accion.\r\n
+comment3.target=int distinctSymbols()
+comment3.text=\r\n Retorna cuantos simbolos distintos hay visibles ahora (sin gastar una accion).\r\n
+comment4.target=boolean solved()
+comment4.text=\r\n Indica si la partida termino, es decir, si todas las ruedas muestran el mismo simbolo.\r\n
+comment5.target=int[][] actions()
+comment5.text=\r\n Retorna las acciones realizadas hasta ahora, en orden, como pares {rueda, pasos}.\r\n
+numComments=6

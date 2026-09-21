@@ -1,0 +1,21 @@
+#BlueJ class context
+#Sun Sep 20 23:07:45 COT 2026
+comment0.target=SlotMachineContest
+comment0.text=\r\n Punto de entrada del problema de la maraton (Problem I, 2025 Slot Machine).\r\n Solo coordina\: crea la maquina, se la entrega al solver a traves de una\r\n ContestTool y, para simular, repite las acciones sobre una copia visible.\r\n\r\n  - SlotMachine simula la maquina y hace de testing tool; no resuelve nada.\r\n  - ContestTool es la unica ventana del solver hacia la maquina.\r\n  - ContestSolver contiene el algoritmo.\r\n\r\n La maquina permanece invisible en solve(n) y visible en simulate(n).\r\n\r\n@author Juan Camilo Rojas / Rafael Ricardo Gomez\r\n@version 1.0 (Ciclo 3)\r\n
+comment1.target=SlotMachineContest()
+comment2.params=n
+comment2.target=int[][] solve(int)
+comment2.text=\r\n Resuelve una maquina de n ruedas y n simbolos inicializada aleatoriamente\r\n (invisible) y retorna las acciones {rueda, pasos} que la llevan al jackpot.\r\n Retorna un arreglo vacio si n es invalido o si la maquina ya esta ganada (n \= 1).\r\n El enunciado de la maraton usa 3 <\= n <\= 50; aqui se acepta cualquier n valido.\r\n
+comment3.params=n
+comment3.target=void simulate(int)
+comment3.text=\r\n Simula visualmente la solucion\: resuelve una maquina invisible y luego\r\n repite las mismas acciones, con pausas, sobre una copia visible con la\r\n misma configuracion inicial. Si n no cabe en pantalla no simula.\r\n
+comment4.params=n
+comment4.target=boolean canSimulate(int)
+comment4.text=\r\n Indica si simulate(n) puede mostrar la maquina completa en el canvas.\r\n
+comment5.params=n seed
+comment5.target=int[][] solve(int, long)
+comment5.text=\r\n Resuelve la maquina que produce la semilla dada.\r\n
+comment6.params=machine actions pauseMillis
+comment6.target=void play(SlotMachine, int[][], int)
+comment6.text=\r\n Aplica las acciones a la maquina en orden, esperando pauseMillis entre una\r\n y otra si la maquina es visible (0 para no esperar).\r\n
+numComments=7

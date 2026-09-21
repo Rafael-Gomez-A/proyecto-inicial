@@ -1,0 +1,8 @@
+#BlueJ class context
+#Sun Sep 20 23:07:45 COT 2026
+comment0.target=SlotMachineContestCTest
+comment0.text=\r\n Clase de pruebas COLECTIVA del Ciclo 3, construida entre todo el curso\r\n via wiki. Cada autor agrega sus casos con el prefijo de sus apellidos\r\n (iniciales de los primeros apellidos + primera letra del segundo,\r\n en orden alfabetico).\r\n\r\n Casos agregados por\: Gomez / Rojas (prefijo\: gomRoj)\r\n
+comment1.target=void gomRojDeberiaLlevarLaMaquinaAlJackpotAlRepetirLasAcciones()
+comment2.target=void gomRojNoDeberiaDarAccionesCuandoLaMaquinaTieneUnaSolaRueda()
+comment3.target=void gomRojNoDeberiaCrearUnaMaquinaConNInvalido()
+numComments=4

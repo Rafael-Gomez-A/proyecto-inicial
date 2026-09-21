@@ -1,0 +1,16 @@
+#BlueJ class context
+#Sun Sep 20 22:20:03 COT 2026
+comment0.target=CssColors
+comment0.text=\r\n Clase de utilidad que conoce los nombres est\u00E1ndar de colores CSS y puede\r\n validar un nombre de color y convertirlo en un objeto {@link java.awt.Color}.\r\n\r\n Esta clase ampl\u00EDa el proyecto original "shapes"\: el componente Canvas\r\n original solo reconoc\u00EDa 7 colores definidos internamente ("red", "yellow",\r\n "blue", "green", "magenta", "black", "white"). SlotMachine requiere\r\n s\u00EDmbolos identificados por cualquier nombre de color est\u00E1ndar de CSS;\r\n por ello, esta tabla incorpora el resto de los colores CSS con nombre\r\n y es utilizada tanto por SlotMachine (para validar la entrada del usuario)\r\n como por la versi\u00F3n ampliada de {@link Canvas} (para dibujarlos).\r\n\r\n@author Juan Camilo Rojas / Rafael Ricardo Gomez\r\n@version 1.0 (Ciclo 1)\r\n
+comment1.target=CssColors()
+comment2.params=name rgb
+comment2.target=void put(java.lang.String, int)
+comment3.params=name
+comment3.target=boolean isValid(java.lang.String)
+comment3.text=\r\n Indica si el nombre proporcionado es una palabra clave de color CSS reconocida.\r\n La comparaci\u00F3n no distingue entre may\u00FAsculas y min\u00FAsculas; "null" nunca es v\u00E1lido.\r\n
+comment4.params=name
+comment4.target=java.awt.Color toAwtColor(java.lang.String)
+comment4.text=\r\n Convierte un nombre de color CSS v\u00E1lido en un objeto java.awt.Color.\r\n
+comment5.target=java.util.List distinctNames()
+comment5.text=\r\n Retorna los nombres de color CSS sin repetir tonos, ordenados alfabeticamente.\r\n Varios nombres CSS comparten el mismo tono (por ejemplo "gray" y "grey"); de\r\n cada grupo solo se incluye el primero, de modo que dos nombres de la lista\r\n nunca se ven iguales en pantalla.\r\n
+numComments=6

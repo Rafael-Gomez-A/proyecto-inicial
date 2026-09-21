@@ -1,0 +1,20 @@
+#BlueJ class context
+#Sun Sep 20 22:17:38 COT 2026
+comment0.target=ContestSolver
+comment0.text=\r\n Resuelve el problema de la maraton (Slot Machine) usando solo una ContestTool\:\r\n gira ruedas y observa cuantos simbolos distintos hay visibles. Nunca ve un color.\r\n\r\n Modelo\: n ruedas con los mismos n simbolos en el mismo orden circular; solo se\r\n desconoce cual simbolo muestra cada una. Como los simbolos son distintos, cada\r\n rueda esta en una posicion del circulo y "simbolos distintos visibles" equivale\r\n a "posiciones distintas ocupadas". Se gana cuando todas ocupan la misma.\r\n\r\n Estrategia, en tres fases\:\r\n  1. separate()\: deja todas las ruedas mostrando simbolos distintos (respuesta n).\r\n  2. discoverOrder()\: descubre cuantos puestos a la derecha de la rueda 1 esta cada rueda.\r\n  3. align()\: con ese orden, lleva todas las ruedas al simbolo que muestra la rueda 1.\r\n\r\n Con n \= 50 no pasa de unas 5000 acciones (cota); el peor caso construido usa\r\n 2499 y el enunciado permite 10000 (ver SlotMachineContestTest).\r\n\r\n@author Juan Camilo Rojas / Rafael Ricardo Gomez\r\n@version 1.0 (Ciclo 3)\r\n
+comment1.target=int[][] solve()
+comment1.text=\r\n Juega hasta ganar.\r\n @return las acciones realizadas, en orden, como pares {rueda, pasos}.\r\n
+comment2.target=void separate()
+comment2.text=\r\n Fase 1. Recorre las ruedas una a una y le da a cada una un simbolo que\r\n ninguna otra muestra. Una rueda con simbolo unico sigue siendo unica\r\n cuando se mueven las demas, asi que al terminar todas lo son (respuesta n).\r\n
+comment3.params=wheel
+comment3.target=void makeUnique(int)
+comment3.text=\r\n Gira la rueda de a un paso mirando la respuesta\: si sube, la rueda paso de\r\n repetida a unica; si baja, ya era unica y el ultimo paso la arruino, y se\r\n deshace; si no cambia, su condicion sigue igual y se sigue girando.\r\n
+comment4.target=int[] discoverOrder()
+comment4.text=\r\n Fase 2. Parte de que todas las ruedas muestran simbolos distintos. Avanza la\r\n rueda 1 un puesto por vez\: cada avance la hace chocar con la rueda que estaba\r\n un puesto adelante (respuesta n-1) y deja libre el puesto que ella ocupaba.\r\n Esa rueda se identifica en findCollidingWheel(). Al terminar, la rueda 1 esta\r\n en el puesto n-1 y la rueda order[i] esta en el puesto i (habiendo estado\r\n i+1 puestos adelante de la rueda 1 al comenzar).\r\n @return las ruedas 2..n ordenadas por su distancia a la rueda 1.\r\n
+comment5.params=candidates
+comment5.target=int findCollidingWheel(java.util.List)
+comment5.text=\r\n Encuentra, entre las ruedas aun sin identificar, la que choco con la rueda 1.\r\n Retroceder un puesto a esa rueda llena el puesto libre y la respuesta vuelve\r\n a n; retroceder a cualquier otra deja la respuesta en n-2 y se deshace.\r\n Si solo queda una candidata, es esa. La rueda encontrada queda retrocedida\r\n un puesto y se saca de la lista. (Si al probar se gana, la partida termina\r\n y el resultado ya no importa.)\r\n
+comment6.params=order
+comment6.target=void align(int[])
+comment6.text=\r\n Fase 3. La rueda 1 esta en el puesto n-1 y la rueda order[i] en el puesto i\:\r\n girar cada una n-1-i pasos las deja a todas en el puesto de la rueda 1.\r\n
+numComments=7

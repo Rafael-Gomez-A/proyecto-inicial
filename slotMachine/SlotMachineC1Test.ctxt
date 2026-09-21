@@ -1,0 +1,33 @@
+#BlueJ class context
+#Sun Sep 20 23:09:48 COT 2026
+comment0.target=SlotMachineC1Test
+comment0.text=\r\n Pruebas de ACEPTACION del Ciclo 1 de SlotMachine (addWheel, delWheel,\r\n addSymbol, delSymbol, placeSymbol, spin, symbols, distinctSymbols,\r\n configuration, isJackpot, exit y ok). Cada prueba es un escenario\r\n completo visto desde el usuario; se ejecutan con la maquina invisible\r\n para no abrir dialogos (JOptionPane).\r\n\r\n @author Juan Camilo Rojas / Rafael Ricardo Gomez\r\n
+comment1.target=void setUp()
+comment10.target=void deberiaForzarSimbolosYDetectarElJackpot()
+comment10.text=\ placeSymbol fuerza el visible (sin distinguir mayusculas), ajusta la\r\n rueda fuera de rango y falla si el color no existe; isJackpot es\r\nverdadero solo cuando todos los visibles coinciden.
+comment11.target=void noDeberiaHaberJackpotSinSimbolos()
+comment11.text=Sin ruedas, o con ruedas vacias, nunca hay jackpot.
+comment12.target=void deberiaGirarAlAzarSoloConSimbolosDeLaRueda()
+comment12.text=\ spin(wheel) es aleatorio y siempre deja un simbolo de esa rueda;\r\nspin() gira todas las ruedas.
+comment13.target=void giroConUnSoloSimboloPorRuedaSiempreEsJackpot()
+comment13.text=Con una sola opcion por rueda el giro es predecible\: siempre jackpot.
+comment14.target=void noDeberiaGirarSinRuedasNiSimbolos()
+comment14.text=\ Girar falla sin ruedas o sin simbolos; spin() basta con que una\r\nrueda tenga simbolos.
+comment15.target=void despuesDeExitNoDeberiaAceptarOperaciones()
+comment15.text=Despues de exit() la maquina rechaza todo y exit() no se repite.
+comment2.target=void tearDown()
+comment3.target=void threeWheels()
+comment3.text=Agrega 3 ruedas [red, green, blue] (visible "red" en cada una).
+comment4.params=wheel
+comment4.target=java.lang.String colorOf(int)
+comment5.target=void deberiaAgregarRuedasEnLaPosicionIndicada()
+comment5.text=\ Las ruedas se insertan en la posicion pedida (ajustando las fuera de\r\nrango) y la ultima rueda agregada queda como rueda activa.
+comment6.target=void deberiaAgregarSimbolosAlaRuedaActiva()
+comment6.text=\ Los simbolos se insertan en orden, se ajusta la posicion, se aceptan\r\nrepetidos y se normalizan mayusculas y espacios.
+comment7.target=void noDeberiaAgregarSimbolosInvalidos()
+comment7.text=\ Sin rueda activa, con color inexistente o nulo, la operacion falla\r\ny no cambia nada.
+comment8.target=void deberiaQuitarSimbolosDeLaRuedaActiva()
+comment8.text=\ delSymbol quita el PRIMER simbolo de ese color, no cambia cual esta\r\nvisible, y falla si el color no esta en la rueda.
+comment9.target=void deberiaQuitarRuedas()
+comment9.text=\ delWheel ajusta la posicion; si borra la rueda activa, las\r\noperaciones de la rueda activa fallan; sin ruedas no se puede borrar.
+numComments=16

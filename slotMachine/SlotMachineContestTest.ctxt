@@ -1,0 +1,32 @@
+#BlueJ class context
+#Sun Sep 20 23:07:45 COT 2026
+comment0.target=SlotMachineContestTest
+comment0.text=\r\n Pruebas de unidad del Ciclo 3\: SlotMachine(n), distinctVisible(), ContestTool\r\n y solve(n). Todas se corren con la maquina invisible\: solve(n, semilla) resuelve\r\n una maquina y las pruebas repiten sus acciones sobre otra maquina creada con la\r\n misma semilla para comprobar que realmente se llega al jackpot.\r\n\r\n @author Juan Camilo Rojas / Rafael Ricardo Gomez\r\n
+comment1.params=visible
+comment1.target=SlotMachine machineShowing(int[])
+comment1.text=\r\n Maquina de n ruedas y n simbolos (n \= cantidad de argumentos) donde la rueda w\r\n muestra el simbolo numero visible[w-1] (0..n-1) del circulo comun.\r\n
+comment10.target=void LosNombresDeColorNoRepitenTono()
+comment11.target=void LaHerramientaCuentaLasAccionesYReportaLosDistintos()
+comment12.target=void UnGiroCompletoNoSeEjecutaNiSeCuenta()
+comment13.target=void LosPasosNegativosGiranHaciaAtras()
+comment14.target=void NoAceptaAccionesDespuesDeGanar()
+comment15.target=void ReproduceElEjemploDeInteraccion1()
+comment16.target=void ReproduceElEjemploDeInteraccion2ConPasosNegativos()
+comment17.target=void ResuelveMaquinasPequenas()
+comment18.target=void ResuelveLaMaquinaMasGrande()
+comment19.target=void ElPeorCasoConocidoDeN50CabeEnElLimite()
+comment2.params=n seed
+comment2.target=boolean winsWhenReplayed(int, long)
+comment2.text=Repite las acciones que solve encontro para la semilla y dice si gana.
+comment20.target=void ElJackpotSeAlcanzaConLaUltimaAccion()
+comment21.target=void LasAccionesSonParesRuedaPasosValidos()
+comment22.target=void NoHayAccionesSiNEsUnoOEsInvalido()
+comment23.target=void SoloSeSimulaSiLaMaquinaCabeEnPantalla()
+comment3.target=void CreaNRuedasYNSimbolosDistintos()
+comment4.target=void TodasLasRuedasTienenLosMismosSimbolosEnElMismoOrden()
+comment5.target=void NoEmpiezaGanada()
+comment6.target=void LaMismaSemillaCreaLaMismaMaquina()
+comment7.target=void FallaConUnNInvalido()
+comment8.target=void CuentaLosColoresVisiblesYNoLosDeLaRueda()
+comment9.target=void DistinctVisibleFallaEnMaquinaVacia()
+numComments=24
